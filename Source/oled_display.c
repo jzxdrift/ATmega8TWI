@@ -3,28 +3,28 @@
 #include "twi.h"
 
 #define SLAVE_ADDRESS			0x78
-#define SA0						0x00		/*or 0x02 (hardware dependent)*/
-#define READ_MODE				0x01
-#define WRITE_MODE				0x00
+#define SA0				0x00		/*or 0x02 (hardware dependent)*/
+#define READ_MODE			0x01
+#define WRITE_MODE			0x00
 
 #define CONTINUE_DATA_ONLY		0x00
 #define CONTINUE_DATA_CMD		0x80
-#define DATA_SELECT				0x40
-#define CMD_SELECT				0x00
+#define DATA_SELECT			0x40
+#define CMD_SELECT			0x00
 #define CONTROL_BYTE			0x00
 
 #define SET_COLUMN_ADDRESS		0x21
-#define COLUMN_START_ADDRESS	0x00
+#define COLUMN_START_ADDRESS		0x00
 #define COLUMN_END_ADDRESS		0x7F
 
 #define SET_PAGE_ADDRESS		0x22
 #define PAGE_START_ADDRESS		0x00
 #define PAGE_END_ADDRESS		0x07
 
-#define BYTE					8
+#define BYTE				8
 #define OLED_RESOLUTION			(128 * 64)
 
-#define FIRST_CHAR				32
+#define FIRST_CHAR			32
 #define CHAR_COLUMNS			5
 
 extern const uint8_t INIT_COMMANDS[];
